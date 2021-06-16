@@ -1,4 +1,5 @@
-const baseUrl = process.env.REACT_APP_API_BASE_URL;
+const baseUrl =
+  "https://my-json-server.typicode.com/Gabriel-Floricel/mock-shoes";
 
 export async function getShippingAddress(userId) {
   return fetch(baseUrl + "shippingAddress/" + userId).then((response) => {
