@@ -33,3 +33,15 @@ I made the following enhancements:
 1. Deleted from src: index.css, logo.svg, serviceWorker.js, App.test.js
 1. Deleted from public: logo files, manifest.json, robots.txt
 1. Customized App.js and renamed to App.jsx
+
+### Main tools used in this project
+
+- React router
+- fetching off mock API server
+- custom hooks
+- centralized change handlers
+- state enums
+- persisting state through localStorage
+- form validations
+- error boundaries and 404s handling
+- useNavigation
