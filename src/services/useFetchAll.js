@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+const baseUrl =
+  "https://my-json-server.typicode.com/Gabriel-Floricel/mock-shoes/";
+
 export default function useFetchAll(urls) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -7,7 +10,7 @@ export default function useFetchAll(urls) {
 
   useEffect(() => {
     const promises = urls.map((url) =>
-      fetch(process.env.REACT_APP_API_BASE_URL + url).then((response) => {
+      fetch(baseUrl + url).then((response) => {
         if (response.ok) return response.json();
         throw response;
       })

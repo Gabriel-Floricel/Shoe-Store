@@ -1,5 +1,5 @@
 const baseUrl =
-  "https://my-json-server.typicode.com/Gabriel-Floricel/mock-shoes";
+  "https://my-json-server.typicode.com/Gabriel-Floricel/mock-shoes/";
 
 export async function getProducts(category) {
   const response = await fetch(baseUrl + "products?category=" + category);
